@@ -34,6 +34,7 @@ func main() {
 			fmt.Print(body)
 
 		}
+		fmt.Fprintf(w, "Hello World")
 	})
 	http.ListenAndServe(":8080", nil)
 }
